@@ -1,3 +1,4 @@
+import { ButtonDefault } from './styles';
 
 interface ButtonProps {
     text: string;
