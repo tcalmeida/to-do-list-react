@@ -28,7 +28,11 @@ const App = () => {
     setTask(listItem);
   };
   
-  
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    handleAddTask(task);
+    setTitleTask('');
+  };
   
   return(<></>);
 };
