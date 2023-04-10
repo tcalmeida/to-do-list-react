@@ -15,6 +15,13 @@ const App = () => {
   const handleAddTask = (task: any) => {
     setTask([...task, { id: id, title: titleTask, done: false }]);
   };
+
+  const handleCheckTask = (id: string) => {
+    const listItem = task.map((task) =>
+      task.id === id ? { ...task, done: !task.done } : task
+    );
+    setTask(listItem);
+  };
   
   
   
