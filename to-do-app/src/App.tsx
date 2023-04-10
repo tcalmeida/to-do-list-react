@@ -1,3 +1,12 @@
+import Header from './components/Header';
+import Button from './components/Button';
+import TaskContainer from './components/TaskContainer';
+import TaskItem from './components/TaskItem';
+import { GlobalStyle } from './styles/globalStyle';
+import React, { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import { getStorageData } from './hooks/useStorageData';
+
 interface Task {
   id: string;
   title: string;
@@ -12,6 +21,10 @@ const App = () => {
   const handleAddTask = (task: any) => {
     setTask([...task, { id: id, title: titleTask, done: false }]);
   };
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(task));
+  }, [task, setTask]);
 
   const handleCheckTask = (id: string) => {
     const listItem = task.map((task) =>
