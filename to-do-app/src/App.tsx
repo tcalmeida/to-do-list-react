@@ -23,6 +23,10 @@ const App = () => {
     setTask(listItem);
   };
   
+  const handleDeleteTask = (id: string) => {
+    const listItem = task.filter((task) => task.id !== id);
+    setTask(listItem);
+  };
   
   
   
