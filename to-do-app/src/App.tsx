@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Button from './components/Button';
 import TaskContainer from './components/TaskContainer';
 import TaskItem from './components/TaskItem';
-import { GlobalStyle } from './styles/globalStyle';
+import { GlobalStyle } from './styles/GlobalStyles';
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { getStorageData } from './hooks/useStorageData';
