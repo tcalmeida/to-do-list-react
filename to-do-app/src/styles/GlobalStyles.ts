@@ -18,6 +18,18 @@ export const GlobalStyle = createGlobalStyle`
   background-image: url(${img});
   background-size: 100% 100%;
   font-family: 'Bebas Neue', cursive;
-  
+}
+
+main {
+  width: 60vw;
+  height: 15vh;
+  background-color: rgba(11, 5, 24, 0.13);
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 `;
