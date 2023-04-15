@@ -11,7 +11,11 @@ interface TaskItemProps {
 function TaskItem(props: TaskItemProps) {
   return (
     <Item key={props.id}>
-      <CheckBox type="checkbox" checked={props.done} onChange={props.handleCheck} />
+      <CheckBox
+        type="checkbox"
+        checked={props.done}
+        onChange={props.handleCheck}
+      />
       <Task done={props.done} onDoubleClick={props.handleCheck}>
         {props.title}
       </Task>
