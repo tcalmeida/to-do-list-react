@@ -1,4 +1,4 @@
-import { TaskList } from "./styles"; 
+import { TaskList } from './styles';
 
 interface TaskContainerProps {
   children: JSX.Element | JSX.Element[];
